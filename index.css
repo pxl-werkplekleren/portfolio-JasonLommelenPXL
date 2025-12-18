@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    background: #fff;
+    margin-bottom: 1.25em;
+    border: 1px solid #dedede;
+    word-wrap: normal;
+}
+table thead,table tfoot {
+    background: #f7f8f7;
+}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td  {
+    padding: .5em .625em .625em;
+    font-size: inherit;
+    color: rgba(0,0,0,.8);
+    text-align: left;
+}
+table tr th,table tr td {
+    padding: .5625em .625em;
+    font-size: inherit;
+    color: rgba(0,0,0,.8)
+}
+table tr.even,table tr.alt {
+    background: #f8f8f7
+}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td {
+    line-height: 1.6
+}
+
+table.grid-all>*>tr>* {
+    border-width: 1px;
+}
+
+
+header {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introductie {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.titel {
+    margin-top:20px;
+}
+
+.naam {
+    margin-top:20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.random {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
