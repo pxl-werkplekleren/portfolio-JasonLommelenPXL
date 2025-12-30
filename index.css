@@ -1,81 +1,121 @@
-* {
-    padding: 0;
+*
+{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body
+{
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f6f7f9;
+    color: #222;
+    padding: 24px;
 }
 
-table {
+header,
+main
+{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header
+{
+    text-align: center;
+    padding: 24px;
     background: #fff;
-    margin-bottom: 1.25em;
-    border: 1px solid #dedede;
-    word-wrap: normal;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-bottom: 24px;
 }
-table thead,table tfoot {
-    background: #f7f8f7;
+
+.titel
+{
+    margin: 12px 0;
 }
-table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td  {
-    padding: .5em .625em .625em;
-    font-size: inherit;
-    color: rgba(0,0,0,.8);
+
+.naam
+{
+    margin-bottom: 12px;
+}
+
+.introductie
+{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section
+{
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 24px 0;
+    text-align: center;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 24px 0;
+}
+
+th,
+td
+{
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    vertical-align: top;
     text-align: left;
 }
-table tr th,table tr td {
-    padding: .5625em .625em;
-    font-size: inherit;
-    color: rgba(0,0,0,.8)
-}
-table tr.even,table tr.alt {
-    background: #f8f8f7
-}
-table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td {
-    line-height: 1.6
+
+thead th
+{
+    background: #f0f2f5;
 }
 
-table.grid-all>*>tr>* {
-    border-width: 1px;
+tbody tr:nth-child(even)
+{
+    background: #fafafa;
 }
 
-
-header {
-    margin: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+ol,
+ul
+{
+    padding-left: 1.25rem;
+    margin: 10px 0;
 }
 
-.introductie {
-    margin-top: 20px;
-    text-align: center;
+section ol,
+section ul
+{
+    max-width: 900px;
+    width: 100%;
+    margin: 12px auto;
+    padding-left: 2rem;
+    text-align: left;
+    list-style-position: outside;
 }
 
-.titel {
-    margin-top:20px;
+section li
+{
+    margin: 0 0 18px 0;
 }
 
-.naam {
-    margin-top:20px;
+section li:last-child
+{
+    margin-bottom: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.random {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+section li .titel
+{
+    margin: 0 0 10px 0;
 }
